@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   从小到大排列
+    // 它重复地走访要排序的元素列,依次比较两个相邻的元素
+    // 如果它们的顺序(如从大到小,首字母从A到Z) 错误就把它们交换过来
+    // 走访元素的工作是重复进行直到没有相邻元素需要交换,也就是说该元素已经排列完成
+    var arr = [30, 24, 29, 22];
+    // 第一轮
+    for (var i = 0; i <arr.length-1; i++){
+        if (arr[i] > arr[i+1]){
+            var temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+        }
+    }
+    console.log(arr);
+    
+    for (var i = 0; i <arr.length-1; i++){
+        if (arr[i] > arr[i+1]){
+            var temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+        }
+    }
+    console.log(arr);
+   
+    
+    for (var i = 0; i <arr.length-1; i++){
+        if (arr[i] > arr[i+1]){
+            var temp = arr[i];
+            arr[i] = arr[i+1];
+            arr[i+1] = temp;
+        }
+    }
+    console.log(arr);
+    
+    
+    
+    
+    </script>
+</body>
+</html>

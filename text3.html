@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           var num = 0;
+           do {
+               console.log(num);
+               num++;
+           }     while (num < 10)
+
+        //    do  while  先执行 后判断
+
+        var count = 10;
+        do {
+            console.log(count);
+            count++;
+        } while (count < 10)
+
+
+        while (count <10){
+            console.log(count);
+            count++;
+        }
+    
+        // 假如投资的年利率为5%，试求从1000块增长到5000块，需要花费多少年
+        // 1000*1.05
+        // 1050*1.05
+        // ...
+        // >5000
+        var money = 1000;
+        // 计算器  记录 用了几年
+        var count = 0;
+        while (money < 5000) {
+               money *= 1.05;
+               count++;
+       }
+       console.log(count);
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
